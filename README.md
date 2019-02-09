@@ -1,2 +1,2 @@
 # tournament-registration
-a tournament registration webserver for mktt db construct
+a tournament registration rest-api for mktt db construct
