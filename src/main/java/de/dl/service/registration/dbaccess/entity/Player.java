@@ -4,10 +4,7 @@ package de.dl.service.registration.dbaccess.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @Entity
@@ -19,11 +16,14 @@ public class Player {
   @GeneratedValue(strategy= GenerationType.AUTO)
   private Long playId;
 
+  @OneToOne(cascade = CascadeType.ALL)
+  @JoinColumn(unique = true, name = "play_club_id")
+  private Club club;
+
   private String playFirstname;
   private String playLastname;
   private Long playTypeId;
   private java.sql.Timestamp playBirthdate;
-  private Long playClubId;
   private Long playPaid;
   private Long playSeed;
   private String playFirstnameshort;
@@ -31,5 +31,6 @@ public class Player {
   private Long playForeigner;
   private String playNationality;
   private Double playTtr;
+
 
 }
