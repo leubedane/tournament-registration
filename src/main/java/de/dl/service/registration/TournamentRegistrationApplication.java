@@ -1,4 +1,4 @@
-package de.spring.treg.tournamentregistration;
+package de.dl.service.registration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

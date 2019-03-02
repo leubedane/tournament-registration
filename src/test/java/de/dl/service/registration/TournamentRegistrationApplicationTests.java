@@ -1,4 +1,4 @@
-package de.spring.treg.tournamentregistration;
+package de.dl.service.registration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
