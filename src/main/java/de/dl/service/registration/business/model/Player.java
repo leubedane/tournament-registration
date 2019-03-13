@@ -1,4 +1,4 @@
-package de.dl.service.registration.model;
+package de.dl.service.registration.business.model;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
